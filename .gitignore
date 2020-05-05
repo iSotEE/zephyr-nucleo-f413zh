@@ -1,0 +1,3 @@
+workspace/build
+workspace/zephyr-guest.elf
+workspace/zephyr-host.elf
