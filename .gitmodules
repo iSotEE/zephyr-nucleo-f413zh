@@ -4,3 +4,6 @@
 [submodule "isotee"]
 	path = isotee
 	url = https://github.com/iSotEE/isotee.git
+[submodule "zephyr"]
+	path = zephyr
+	url = https://github.com/iSotEE/zephyr.git
