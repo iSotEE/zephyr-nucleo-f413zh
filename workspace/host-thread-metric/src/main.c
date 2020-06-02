@@ -12,6 +12,8 @@
 #include <logging/log.h>
 #include <stdlib.h>
 
+extern int cmd_tm(const struct shell *shell, size_t argc, char **argv);
+
 static int cmd_guest(const struct shell *shell, size_t argc, char **argv)
 {
 	ARG_UNUSED(argc);
@@ -21,6 +23,9 @@ static int cmd_guest(const struct shell *shell, size_t argc, char **argv)
 
     extern void _isotee_start_guest();
     _isotee_start_guest();
+
+    static char *cmd_tm_argv[] = {"", "8"};
+    cmd_tm(shell, 2, cmd_tm_argv);
 
 	return 0;
 }
